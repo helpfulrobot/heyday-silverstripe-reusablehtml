@@ -18,7 +18,6 @@ class ReusableHtmlHelpers implements TemplateGlobalProvider
 
         if ($source) {
             foreach ($source as $value => $title) {
-
                 $checked = (is_array($fieldValue) && in_array($value, $fieldValue)) ? true : $value == $fieldValue;
 
                 $options[] = new ArrayData(
@@ -28,7 +27,6 @@ class ReusableHtmlHelpers implements TemplateGlobalProvider
                         'checked' => $checked
                     )
                 );
-
             }
         }
 
